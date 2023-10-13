@@ -1,8 +1,10 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
 const Shop = (props) => {
     console.log(props)
-    const {} = props.product;
+    const {title, image, profile, beginners, programming, Mark_as_read} = props.product;
     return (
         <div>
         <div className="card-compact w-full bg-base-100">
