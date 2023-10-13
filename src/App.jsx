@@ -1,11 +1,11 @@
 import React from 'react';
+import Header from './Components/Header/Header';
 
 const App = () => {
   return (
-    <div>
-      <h1 className='text-red-500 font-bold text-5xl'>Hello</h1>
-      <button className='btn btn-primary font-bold'>click me</button>
-    </div>
+    <>
+      <Header></Header>
+    </>
   );
 };
 
