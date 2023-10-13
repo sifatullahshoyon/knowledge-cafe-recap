@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Shop = (props) => {
-  console.log(props);
+//   console.log(props);
   const { title, image, profile, beginners, programming, Mark_as_read } = props.product;
+  const addBookmark = props.addBookmark;
   return (
     <div>
       <div className="card-compact w-full bg-base-100">
@@ -31,7 +32,7 @@ const Shop = (props) => {
             <div>
               <p>
                 <small className="font-exo font-medium text-xl">
-                  {profile.read} min read <FontAwesomeIcon icon={faBookmark} />
+                  {profile.read} min read <span onClick={() => addBookmark(props.product)} className="cursor-pointer"><FontAwesomeIcon icon={faBookmark} /></span>
                 </small>
               </p>
             </div>
