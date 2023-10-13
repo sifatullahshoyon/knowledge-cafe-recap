@@ -15,10 +15,14 @@ const Main = () => {
     } , []);
     return (
         <div className='container mx-auto flex flex-col md:flex-row lg:flex-row p-2 gap-3'>
-            {
-                products?.map(product => <Shop product={product} key={product.id}></Shop>)
-            }
-            <Cart></Cart>
+            <div className='w-full md:w-3/5'>
+                {
+                    products?.map(product => <Shop product={product} key={product.id}></Shop>)
+                }
+            </div>
+            <div className='w-full md:w-2/5'>
+                <Cart></Cart>
+            </div>
         </div>
     );
 };

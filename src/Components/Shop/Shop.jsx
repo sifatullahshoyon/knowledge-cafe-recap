@@ -35,7 +35,7 @@ const Shop = (props) => {
               <span>{beginners}</span>
               <span>{programming}</span>
             </div>
-            <p onClick={() => handleMarkRead(props.props.content)} className="font-exo text-xl font-semibold text-indigo-600 underline">{Mark_as_read}</p>
+            <p className="font-exo text-xl font-semibold text-indigo-600 underline">{Mark_as_read}</p>
             <hr className="my-8" />
           </div>
         </div>
