@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => {
-    return (
-        <div>
+  return (
+    <div>
       <div className="navbar bg-base-100 flex flex-wrap md:flex-nowrap justify-around pt-5">
         <div className="flex">
           <a className="btn btn-ghost mb-5 normal-case text-3xl md:text-4xl text-black font-bold font-exo">
@@ -36,7 +36,7 @@ const Navbar = () => {
         <hr className="md:container md:mx-auto border my-5  md:w-9/12" />
       </div>
     </div>
-    );
+  );
 };
 
 export default Navbar;
