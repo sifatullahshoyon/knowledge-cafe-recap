@@ -1,7 +1,6 @@
 import React from "react";
 
 const Cart = (props) => {
-    // console.log(props);
     let time = 0;
     for(let pd of props.cart){
         time = time + parseInt(pd.profile.read)

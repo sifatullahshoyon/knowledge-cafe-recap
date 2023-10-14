@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Shop = (props) => {
-//   console.log(props);
+  console.log(props);
   const { title, image, profile, beginners, programming, Mark_as_read } = props.product;
   const addBookmark = props.addBookmark;
   const markAsRead = props.markAsRead;
@@ -45,9 +45,9 @@ const Shop = (props) => {
             <span>{beginners}</span>
             <span>{programming}</span>
           </div>
-          <p onClick={() => markAsRead(props.product)} className="font-exo text-xl font-semibold text-indigo-600 underline">
+          <span onClick={() => markAsRead(props.product)} className="font-exo text-xl font-semibold text-indigo-600 underline">
             {Mark_as_read}
-          </p>
+          </span>
           <hr className="my-8" />
         </div>
       </div>

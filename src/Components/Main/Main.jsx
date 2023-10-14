@@ -50,8 +50,7 @@ const Main = () => {
                 <Cart cart={cart}></Cart>
             </div>
             <ToastContainer />
-        </div>
-        
+        </div> 
     );
 };
 

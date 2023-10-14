@@ -5,8 +5,6 @@ import Blog from './Components/Blog/Blog';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-
 const App = () => {
   return (
     <>
