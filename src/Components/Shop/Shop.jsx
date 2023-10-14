@@ -6,6 +6,7 @@ const Shop = (props) => {
 //   console.log(props);
   const { title, image, profile, beginners, programming, Mark_as_read } = props.product;
   const addBookmark = props.addBookmark;
+  const markAsRead = props.markAsRead;
   return (
     <div>
       <div className="card-compact w-full bg-base-100">
@@ -44,7 +45,7 @@ const Shop = (props) => {
             <span>{beginners}</span>
             <span>{programming}</span>
           </div>
-          <p className="font-exo text-xl font-semibold text-indigo-600 underline">
+          <p onClick={() => markAsRead(props.product)} className="font-exo text-xl font-semibold text-indigo-600 underline">
             {Mark_as_read}
           </p>
           <hr className="my-8" />

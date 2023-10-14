@@ -6,11 +6,15 @@ import { ToastContainer, toast } from 'react-toastify';
 const Main = () => {
     const [products , setProducts] = useState([]);
     const [cart , setCart] = useState([]);
-    console.log(cart)
+    // console.log(cart);
     const addBookmark = (product) => {
         const newCart = [...cart , product];
         setCart(newCart);
         toast("You Have Already Bookmarked This Blog!");
+      };
+      const markAsRead = (pd) => {
+        const newCart = [...cart , pd];
+        setCart(newCart);
       };
     useEffect(() => {
         const loadData = async() => {
@@ -28,6 +32,7 @@ const Main = () => {
                         product={product} 
                         key={product.id}
                         addBookmark={addBookmark}
+                        markAsRead={markAsRead}
                         ></Shop>)
                 }
             </div>
