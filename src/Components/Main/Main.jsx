@@ -6,11 +6,21 @@ import { ToastContainer, toast } from 'react-toastify';
 const Main = () => {
     const [products , setProducts] = useState([]);
     const [cart , setCart] = useState([]);
-    // console.log(cart);
     const addBookmark = (product) => {
         const newCart = [...cart , product];
-        setCart(newCart);
-        toast("You Have Already Bookmarked This Blog!");
+        if(newCart){
+            if(cart.includes(product)){
+                toast.error('You Have Already Bookmarked This Blog!');
+            }
+            else{
+                const newBlog = [...cart , product]
+                setCart(newBlog);
+                toast.success('Bookmark Successful')
+            }
+        }
+        else{
+            setCart(newCart);
+        }
       };
       const markAsRead = (pd) => {
         const newCart = [...cart , pd];

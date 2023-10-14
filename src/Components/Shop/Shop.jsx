@@ -17,7 +17,7 @@ const Shop = (props) => {
           <div className="flex justify-between items-center my-8">
             <div className="flex justify-center items-center gap-6">
               <div>
-                <img src={profile.img} alt="" />
+                <img src={profile.img} alt="user img" />
               </div>
               <div>
                 <h4 className="font-exo text-2xl text-black font-bold">
