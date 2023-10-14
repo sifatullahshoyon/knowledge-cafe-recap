@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Shop = (props) => {
-  console.log(props);
   const { title, image, profile, beginners, programming, Mark_as_read } = props.product;
   const addBookmark = props.addBookmark;
   const markAsRead = props.markAsRead;
