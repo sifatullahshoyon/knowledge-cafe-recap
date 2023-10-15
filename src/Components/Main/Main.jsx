@@ -28,11 +28,15 @@ const Main = () => {
       };
     useEffect(() => {
         const loadData = async() => {
-            const res = await fetch('../../../public/data.json');
+            const res = await fetch('data.json');
             const data = await res.json();
+            // console.log(data)
             setProducts(data);
         };
         loadData();
+        // fetch('data.json')
+        // .then(res => res.json())
+        // .then(data => console.log(data))
     } , []);
     return (
         <div className='container mx-auto flex flex-col md:flex-row lg:flex-row p-2 gap-3'>
