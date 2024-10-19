@@ -8,7 +8,7 @@ const Shop = (props) => {
   const markAsRead = props.markAsRead;
   return (
     <div>
-      <div className="card-compact w-full bg-base-100">
+      <div className="card-compact w-full">
         <figure>
           <img className="rounded" src={image} alt="programming img" />
         </figure>

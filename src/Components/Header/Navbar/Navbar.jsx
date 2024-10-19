@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 flex flex-wrap md:flex-nowrap justify-around pt-5">
+      <div className="navbar flex flex-wrap md:flex-nowrap justify-around pt-5">
         <div className="flex">
           <a className="btn btn-ghost mb-5 normal-case text-3xl md:text-4xl text-black font-bold font-exo">
             Knowledge Cafe

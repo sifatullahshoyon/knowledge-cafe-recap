@@ -4,6 +4,7 @@ import Main from './Components/Main/Main';
 import Blog from './Components/Blog/Blog';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Components/Footer/Footer';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Main></Main>
       <Blog></Blog>
       <ToastContainer />
+      <Footer />
     </>
   );
 };
